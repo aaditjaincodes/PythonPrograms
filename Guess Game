@@ -1,0 +1,25 @@
+#GUESS GAME
+#Made a guessing game in which you have to guess the number between 1 and 100 . If you guessed it right , you are lucky otherwise better luck next time. 
+#FUN GAME !
+
+import random
+
+print("Guess Game".upper())
+print("-----------------------------------")
+guess=int(input("Enter your guess: "))
+print("In this guess game, you have a guess a number between 1 and 100")
+count=1
+r=random.randint(1,100)
+while guess!=r:
+    if count<5:
+        print("Bad Luck ! Please try again. You have "+str(5-count)+" attempts left")
+        guess=int(input("Enter your guess again :"))
+        count=count+1
+    else:
+        print("You have exceeded the maximum number of attempts. Better luck next time .")
+        break
+
+    
+if guess==r:    
+    print("Congratulations ! You guessed it right !")
+    print(" You have taken "+str(count)+ " attempts to get it right.")
