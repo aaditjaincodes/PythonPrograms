@@ -1,0 +1,34 @@
+'''
+Given the temperature of a day in Degrees Celsius, convert this given temperature from Celsius to Fahrenheit. Write a program to do so. Round the output up to 2 decimal places
+
+Note1:
+
+Python : Use round(ans,2) to round up ans to two decimals
+
+Java : Use Math.round(val*100)/100d to round upto two decimals
+
+Note2:
+
+You need not take input in this problem, you need to only implement the function provided.
+
+Input Format:
+
+First line has the number of test cases. For each test case there will be a single line 
+of input in float format representing the temperature.
+Output Format:
+
+Fahrenheit value in float format
+Sample Input:
+
+1
+36.8
+Sample Output:
+
+98.24
+'''
+
+def celsius_farhen(Celsius):
+    ans = 0
+    # YOUR CODE GOES HERE
+    ans=Celsius*(9/5)+32
+    return round(ans,2)
