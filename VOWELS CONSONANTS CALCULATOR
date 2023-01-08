@@ -1,0 +1,12 @@
+#VOWELS/CONSONANTS CALCULATOR : 
+#This calculator counts the number of vowels/consonants in a line or word. It is implemented in python.
+
+print("VOWELS/CONSONANTS CALCULATOR")
+print("=========================================")
+print("This calculator counts the number of vowels/consonants in a word or line")
+
+i=input("Enter any word or line:").lower()
+vcount=i.count('a')+ i.count('e') + i.count('i')+ i.count('o') + i.count('u')
+scount=i.count(" ")
+ccount=len(i)-vcount-scount
+print("Oh I see ! It has "+str(ccount)+" consonant(s),"+str(scount)+" spaces and "+str(vcount)+" vowel(s) .")
