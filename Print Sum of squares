@@ -1,0 +1,43 @@
+'''
+Given an integer n, write a program to print the sum of squares of first n natural numbers in integer format.
+
+Note1:
+
+The formula for the sum of squares of first n natural numbers is: n(n+1)(2n+1)/6
+
+Note2:
+
+You need not take input in this problem, only implement the function provided.
+
+Problem Constraints:
+
+1 <= N <= 100
+Input Format:
+
+The first line indicates the number of test cases.
+For each testcase there will be a single line of input with an integer representing n for that testcase.
+Output Format:
+
+Sum of squares of n natural numbers in integer format
+Sample Input:
+
+1
+6
+Sample Output:
+
+91
+Sample explanation:
+
+According to the formula sum of first 6 natural numbers is 6*(6+1)(12+1)/6=91
+
+'''
+
+def sum_squares(n):
+    ans = None
+    ''' input:Given Integer n
+         output: Return ans as sum of squares in integer format.'''
+    
+    # YOUR CODE GOES HERE
+    ans=(n*(n+1)*(2*n+1))/6
+    
+    return int(ans)
