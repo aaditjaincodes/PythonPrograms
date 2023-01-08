@@ -1,0 +1,32 @@
+#SECURITY SYSTEM :
+#This security system checks the known users registered in the system. In case of un-known users , It registers them on their choice. It is just like a security-checker where the users look for their names.
+
+print("Security System".upper())
+print("===========================================")
+print("This security system checks the known users registered in the system. In case of un-known users , It registers them on their choice .")
+name=input("Enter your name: ")
+count=1
+sample_list=[]
+if name.capitalize() in sample_list:
+    print("Name Recognized !")
+else:
+    print("Name Not Recognized !")
+    choice1=input("Do you want to get registered(Y/N)? ")
+    while choice1.upper()!="N":
+        sample_list.append(name.capitalize())
+        print("Successfully ! Registered. ")
+        count=count+1
+        print()
+        choice1=input("Do you want to register for other(Y/N)? ")
+        print()
+        if choice1.strip().upper()=="Y":
+            name=input("Enter your name: ")
+        else:
+            break
+    print("Have a Wonderful Day !")
+
+print()
+print()
+print("----------Registered Users----------")
+for i in sample_list:
+    print(i)
