@@ -1,0 +1,38 @@
+'''
+Write a function to check if the input list has consecutive duplicate elements or not.
+Return True if there are consecutive duplicate elements in the list else return False.
+
+Here by consecutive duplicates, we mean duplicates that are present at consecutive indices in the array
+
+Input Format:
+
+An integer array A as the function argument.
+Output Format:
+
+Return True or False
+Sample Input:
+
+1
+4
+1 2 3 3
+Sample Output:
+
+True
+Sample Explanation:
+
+As there are 3 3 in the list i.e. at indices 2 and 3, there True is returned.
+'''
+
+def duplicate(ls,n):
+    ans = False
+    ''' input:ls-List of elements and n-indicates the length of list
+         output:Return ans as True or False'''
+    
+    # YOUR CODE GOES HERE
+    for i in range(n-1):
+        if ls[i]==ls[i+1]:
+            ans=True
+            break
+
+    
+    return ans
