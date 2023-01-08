@@ -1,0 +1,48 @@
+'''
+You are given a lowercase latin alphabetic character C. You have to tell whether it is a vowel or not.
+
+The characters 'a', 'e', 'i', 'o', and 'u' are called vowels.
+
+Problem Constraints:
+
+C ∈ ['a' - 'z']
+
+Input Format:
+
+The input consists of a single character C.
+
+Output Format:
+
+Return 1 if the given character is a vowel, else return 0.
+
+Example Input 1:
+
+a 
+Example Onput 1:
+
+1 
+Explanation:
+
+since, 'a' is a vowel.
+
+Example Input 2:
+
+b
+Example Output 2:
+
+0   
+Explanation:
+since, 'b' is a consonant (not a vowel).
+'''
+
+def isvowel(C):
+    ans = None
+    # YOUR CODE GOES HERE
+    if C in ['a','e','i','o','u']:
+        ans=1
+    else:
+        ans=0
+    
+    
+    
+    return ans
