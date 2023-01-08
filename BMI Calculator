@@ -1,0 +1,73 @@
+'''
+Given the height (A) and weight (B) of a person as input in centimetres and kilograms.
+
+Find the BMI of that person and the classification of the user based on their BMI.
+
+Print Underweight if BMI < 18.5
+Print Normal weight if BMI lies in the range [18.5, 24.9]
+Print Overweight if BMI lies in the range (24.9, 29.9]
+Print Obese if BMI is greater than 29.9
+If x is the weight in kilograms and y is the height in metres.
+
+Then, BMI is calculated as x/(y*y).
+
+Problem Constraints -
+
+1 <= A <= 180
+
+1 <= B <= 120
+
+Input Format -
+
+The first line contains the height of the person in centimetres.
+
+The second line of the input contains the weight of the person in kilograms.
+
+Output Format -
+
+The first line of the output contains the classification of a person based on the BMI value.
+
+The second line of the output contains the BMI value of the person.
+
+Sample Input -
+
+Input 1:
+
+101
+29
+Input 2:
+
+129
+31
+Sample Output -
+
+Output 1:
+
+Overweight
+28.4
+Output 2:
+
+Normal
+18.6
+
+'''
+def main():
+    # YOUR CODE GOES HERE
+    # Please take input and print output to standard input/output (stdin/stdout)
+    # E.g. 'input()/raw_input()' for input & 'print' for output
+    height=float(input())
+    weight=float(input())
+    bmi=weight/(height*height)*10000
+    if bmi<18.5:
+        print('Underweight')
+    elif bmi>=18.5 and bmi<=24.9:
+        print('Normal')
+    elif bmi>24.9 and bmi<=29.9:
+        print('Overweight')
+    else:
+        print('Obese')
+    print(round(bmi,1))
+    return 0
+
+if __name__ == '__main__':
+    main()
