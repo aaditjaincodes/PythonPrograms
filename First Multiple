@@ -1,0 +1,33 @@
+'''
+Write a program for a given integer x and a list ls to return the first multiple of x that occurs in the list, and if there isn’t any multiple of x in the list then return -1.
+
+Input Format:
+
+The first input to the function is a list ls and the second input is the integer x.
+Output Format:
+
+Return the multiple of x from the list in integer format, else return -1.
+Sample Input:
+
+1
+4
+2 1 2 4 3 5
+Sample Output:
+
+4
+Sample explanation:
+
+In the list, the first element that is a multiple of 4 is 4.
+'''
+
+def first_multiple(ls,x):
+    ans = -1
+    ''' input:ls-List of elements and x-indicates the integer
+         output:Return ans from the list that is divisible by x'''
+    
+    # YOUR CODE GOES HERE
+    for i in ls:
+        if i%x==0:
+            ans = i
+            break
+    return ans
