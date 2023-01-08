@@ -1,0 +1,17 @@
+#FIBONACCI SERIES
+#Fibonacci series is very famous series in mathematics. Implemented in python code. You can generate any number of terms in that series.
+
+print("Fibonacci Series".upper())
+print("=========================")
+step=int(input("Enter the number of terms(other than 1 and 0):"))
+
+l=[]
+
+l.extend([0,1])
+
+for i in range(0,step):
+    l.append(l[len(l)-2]+l[len(l)-1])
+    
+print("Fibonacci Series :"+str(l))
+print("You have a fibonacci series upto "+str(step+2)+" terms.")
+         
